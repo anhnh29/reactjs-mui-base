@@ -1,4 +1,5 @@
 export const Colors = {
+  primary: '#123257',
   'color-primary': '#123257',
   'shadow-blue-400': '#8a9fbb',
   'shadow-blue-500': '#6d87aa',
@@ -21,3 +22,5 @@ export const Colors = {
   'yellow-600': '#e8af00',
   'yellow-700': '#b58800',
 };
+
+export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

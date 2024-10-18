@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useState } from 'react';
+import { emailRegex } from '@/common/constants/common';
 
 interface IProps {
   handleChangeComponent: (component: SignInComponent) => void;
@@ -35,7 +36,7 @@ export const Login = ({ handleChangeComponent }: IProps) => {
   const validateUsernameOrEmail = (value: string) => {
     if (value.includes('@')) {
       // Validate as an email
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
       return emailRegex.test(value) || 'Invalid email address';
     } else {
       // Validate as a username (you can add further rules here if needed)

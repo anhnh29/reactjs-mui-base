@@ -27,6 +27,7 @@ const SignIn = () => {
   return (
     <div className="bg-white w-[100vw] h-[100vh] flex items-center justify-center bg-[url('/src/common/assets/images/bg-login.png')] bg-cover bg-center bg-no-repeat">
       <div className="size-[500px] p-10 rounded-3xl bg-gradient-to-br from-[rgba(255,255,255,0.85)] to-[rgba(255,255,255,0.8)] border border-white backdrop-blur-[30px] shadow-custom">
+        {/* <div className="size-[500px] p-10 rounded-3xl bg-slate-900 border border-white backdrop-blur-[30px] shadow-custom"> */}
         <div className="flex gap-5 justify-center items-center">
           <img
             src="/src/common/assets/images/logo.svg"

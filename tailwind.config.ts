@@ -1,4 +1,4 @@
-import { Colors } from './src/common/assets/theme';
+import { Colors } from './src/common/constants/common';
 /** @type {import('tailwindcss').Config} */
 
 interface IColor {
@@ -14,9 +14,7 @@ const generateColors = () => {
 };
 module.exports = {
   darkMode: ['class'],
-  content: [
-    './src/**/*.{ts,tsx}',
-  ],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
