@@ -4,7 +4,7 @@ import { toast } from 'react-hot-toast';
 
 import todoApi from '../services/todo.api';
 import { ResponseData, TodoData } from '../services/types';
-import { QueryOptions } from '@/ts/types';
+import { QueryOptions } from '@/common/types';
 
 const todos = createQueryKeys('todos', {
   list: () => ({

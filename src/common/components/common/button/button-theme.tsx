@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 
-import { useThemeStore } from '@/hooks';
+import { useThemeStore } from '@/common/hooks';
 
 const MaterialUISwitch = styled((props: SwitchProps) => <Switch {...props} />)(
   ({ theme }) => ({

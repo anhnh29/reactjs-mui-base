@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import { ButtonTheme } from '@/components';
+import { ButtonTheme } from '@/common/components/common';
 import { navList } from '@/data/constant/navs';
-import { useActiveMenu } from '@/hooks';
+import { useActiveMenu } from '@/common/hooks';
 
 const HeaderComponent = () => {
   const { checkActive } = useActiveMenu();

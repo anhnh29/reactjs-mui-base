@@ -3,7 +3,7 @@ import { FC, ReactNode, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 
-import { useToast } from '@/hooks';
+import { useToast } from '@/common/hooks';
 
 type Props = {
   children: ReactNode;

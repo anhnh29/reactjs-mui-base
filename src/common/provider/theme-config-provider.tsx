@@ -3,7 +3,7 @@ import { ReactElement, useCallback, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import { useThemeStore } from '@/hooks';
+import { useThemeStore } from '@/common/hooks';
 
 type Props = {
   children: ReactElement;
