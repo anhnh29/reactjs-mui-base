@@ -4,56 +4,58 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 346.8 77.2% 49.8%;
-    --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 346.8 77.2% 49.8%;
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
-    --card: 24 9.8% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 346.8 77.2% 49.8%;
-    --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 346.8 77.2% 49.8%;
+    --color-primary: #123257;
+    --shadow-blue-400: #6d87aa;
+    --shadow-blue-500: #6d87aa;
+    --shadow-blue-600: #6d87aa;
+    --shadow-blue-700: #6d87aa;
+    --dark-blue-400: #415b79;
+    --dark-blue-500: #123257;
+    --dark-blue-600: #102e4f;
+    --dark-blue-700: #0d243e;
+    --red-400: #fa6270;
+    --red-500: #f93b4c;
+    --red-600: #e33645;
+    --red-700: #b12a36;
+    --green-400: #49b786;
+    --green-500: #1ca568;
+    --green-600: #19965f;
+    --green-700: #14754a;
+    --yellow-400: #ffcd33;
+    --yellow-500: #ffc000;
+    --yellow-600: #e8af00;
+    --yellow-700: #b58800;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  @media screen and (min-width: 992px) {
+    width: 8px;
+    height: 8px;
   }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ababb1;
+}
+
+@layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply text-color-primary !important;
   }
 }

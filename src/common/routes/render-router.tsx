@@ -4,18 +4,23 @@ import { Navigate, useRoutes } from 'react-router-dom';
 
 import { routeList } from '@/data/constant/navs';
 import LayoutComponent from '@/layout';
+import SignIn from '@/pages/signin';
 
 const NotFound = lazy(() => import('@/pages/not-found'));
 
 const routes = [
   {
     path: '/',
+    element: <Navigate to="home" />,
+  },
+  {
+    path: 'signin',
+    element: <SignIn />,
+  },
+  {
+    path: '/',
     element: <LayoutComponent />,
     children: [
-      {
-        path: '',
-        element: <Navigate to="home" />,
-      },
       ...routeList,
       {
         path: '*',

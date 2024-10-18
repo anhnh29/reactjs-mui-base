@@ -8,3 +8,15 @@ export interface IAuthInfo {
   permissions: string[] | null;
   refreshToken: string;
 }
+
+export enum SignInComponent {
+  Login = 'login',
+  ForgotPassword = 'forgotPassword',
+  FormOtp = 'formOtp',
+  ChangePassword = 'changePassword',
+}
+
+export interface IFormInput {
+  username: string;
+  password: string;
+}

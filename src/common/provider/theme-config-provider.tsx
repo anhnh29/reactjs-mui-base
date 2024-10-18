@@ -53,7 +53,6 @@ function LayoutConfigProvider({ children }: Props) {
         },
       })}
     >
-      {' '}
       <CssBaseline />
       {children}
     </ThemeProvider>
